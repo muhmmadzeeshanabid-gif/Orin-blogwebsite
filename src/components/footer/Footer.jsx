@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <>
@@ -32,15 +34,15 @@ export default function Footer() {
                 id="menu-item-347"
                 className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-347"
               >
-                <a href="#" aria-current="page">
+                <Link href="/" aria-current="page">
                   {"Homepage"}
-                </a>
+                </Link>
               </li>
               <li id="menu-item-348" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-348">
-                <a href="#">{"Archives"}</a>
+                <Link href="/">{"Archives"}</Link>
               </li>
               <li id="menu-item-349" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-349">
-                <a href="#">{"Single Posts"}</a>
+                <Link href="/">{"Single Posts"}</Link>
               </li>
               <li id="menu-item-350" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-350">
                 <a href="#about-us">{"About Us"}</a>

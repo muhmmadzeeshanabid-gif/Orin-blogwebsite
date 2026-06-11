@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import useHeaderUi from "./useHeaderUi";
 
 export default function Header() {
@@ -14,9 +15,9 @@ export default function Header() {
             <nav className="menu-demo-header-container">
               <ul id="menu-demo-header" className="sf-menu sf-arrows">
                 <li id="menu-item-243" className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-243">
-                  <a href="#" aria-current="page">
+                  <Link href="/" aria-current="page">
                     {"Homepage"}
-                  </a>
+                  </Link>
                 </li>
                 <li id="menu-item-244" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-244">
                   <a href="#" className="sf-with-ul">
@@ -24,29 +25,29 @@ export default function Header() {
                   </a>
                   <ul className="sub-menu">
                     <li id="menu-item-246" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-246">
-                      <a href="#">
+                      <Link href="/">
                         {"Archive By Day"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-308" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-308">
-                      <a href="#">
+                      <Link href="/">
                         {"Category Page"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-307" className="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-307">
-                      <a href="#">
+                      <Link href="/">
                         {"Tag Page"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-309" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-309">
-                      <a href="#">
+                      <Link href="/">
                         {"Author Page"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-257" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-257">
-                      <a href="#">
+                      <Link href="/">
                         {"Search Results"}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -56,24 +57,24 @@ export default function Header() {
                   </a>
                   <ul className="sub-menu">
                     <li id="menu-item-258" className="menu-item menu-item-type-post_type menu-item-object-post menu-item-258">
-                      <a href="#">
+                      <Link href="/">
                         {"Image Post"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-259" className="menu-item menu-item-type-post_type menu-item-object-post menu-item-259">
-                      <a href="#">
+                      <Link href="/">
                         {"Gallery Post"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-261" className="menu-item menu-item-type-post_type menu-item-object-post menu-item-261">
-                      <a href="#">
+                      <Link href="/">
                         {"Video Post"}
-                      </a>
+                      </Link>
                     </li>
                     <li id="menu-item-260" className="menu-item menu-item-type-post_type menu-item-object-post menu-item-260">
-                      <a href="#">
+                      <Link href="/">
                         {"Audio Post"}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -101,9 +102,9 @@ export default function Header() {
               <nav className="menu-demo-header-container">
                 <ul id="menu-demo-header-1" className="bwp-mobile-menu list-unstyled">
                   <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-243">
-                    <a href="#" aria-current="page">
+                    <Link href="/" aria-current="page">
                       {"Homepage"}
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-244">
                     <a href="#">
@@ -111,29 +112,29 @@ export default function Header() {
                     </a>
                     <ul className="sub-menu">
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-246">
-                        <a href="#">
+                        <Link href="/">
                           {"Archive By Day"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-308">
-                        <a href="#">
+                        <Link href="/">
                           {"Category Page"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-307">
-                        <a href="#">
+                        <Link href="/">
                           {"Tag Page"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-309">
-                        <a href="#">
+                        <Link href="/">
                           {"Author Page"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-257">
-                        <a href="#">
+                        <Link href="/">
                           {"Search Results"}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -143,24 +144,24 @@ export default function Header() {
                     </a>
                     <ul className="sub-menu">
                       <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-258">
-                        <a href="#">
+                        <Link href="/">
                           {"Image Post"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-259">
-                        <a href="#">
+                        <Link href="/">
                           {"Gallery Post"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-261">
-                        <a href="#">
+                        <Link href="/">
                           {"Video Post"}
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-item menu-item-type-post_type menu-item-object-post menu-item-260">
-                        <a href="#">
+                        <Link href="/">
                           {"Audio Post"}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -199,9 +200,9 @@ export default function Header() {
             <button type="button" id="bwp-toggle-color" className="bwp-button">
               <i className="fas fa-sun"></i>
             </button>
-            <a href="/dashboard" id="bwp-toggle-dashboard" className="bwp-button" title="Dashboard">
+            <Link href="/dashboard" id="bwp-toggle-dashboard" className="bwp-button" title="Dashboard">
               <i className="fas fa-tachometer-alt"></i>
-            </a>
+            </Link>
             <div className="bwp-font-types">
               <button type="button" id="bwp-show-font-types" className="bwp-button">
                 <i className="fas fa-font"></i>

@@ -1,5 +1,53 @@
 import Script from "next/script";
+import { Poppins, Lora, Noto_Serif, Open_Sans, Source_Sans_3, Yeseva_One } from "next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  weight: ["300", "500", "600", "700"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const lora = Lora({
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-lora",
+  display: "swap",
+});
+
+const notoSerif = Noto_Serif({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-noto-serif",
+  display: "swap",
+});
+
+const openSans = Open_Sans({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
+const sourceSansPro = Source_Sans_3({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-source-sans-pro",
+  display: "swap",
+});
+
+const yesevaOne = Yeseva_One({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-yeseva-one",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Orin - Minimal Blog For WordPress - Just another WordPress site",
@@ -12,16 +60,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-US" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&family=Yeseva+One&display=swap"
-        />
-        <link rel="stylesheet" href="/vendor/orin/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/vendor/orin/css/bootstrap-theme.min.css" />
-        <link rel="stylesheet" href="/vendor/orin/css/ie10-viewport-bug-workaround.css" />
-        <link rel="stylesheet" href="/vendor/orin/css/tiny-slider.css" />
         <link rel="stylesheet" href="/vendor/orin/css/magnific-popup.css" />
         <link rel="stylesheet" href="/vendor/orin/fontawesome/css/all.min.css" />
         <link rel="stylesheet" href="/vendor/orin/fontawesome/css/v5-font-face.min.css" />
@@ -76,9 +114,12 @@ export default function RootLayout({ children }) {
           }
         `}</style>
       </head>
-      <body className={bodyClassName} suppressHydrationWarning>
+      <body
+        className={`${bodyClassName} ${poppins.variable} ${lora.variable} ${notoSerif.variable} ${openSans.variable} ${sourceSansPro.variable} ${yesevaOne.variable}`}
+        suppressHydrationWarning
+      >
         {children}
-        <Script src="/vendor/orin/js/jquery.min.js" strategy="beforeInteractive" />
+        <Script src="/vendor/orin/js/jquery.min.js" strategy="afterInteractive" />
         <Script src="/vendor/orin/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
         <Script id="orin-restore-style-cookie" strategy="beforeInteractive">{`
           (function () {

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function FooterWidgets() {
   return (
     <>
@@ -18,148 +21,148 @@ export default function FooterWidgets() {
               <ul className="list-unstyled">
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/sincerely-media-h140-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Every day a new life begins! Cherish the moment." decoding="async" loading="lazy" srcSet="/images/sincerely-media-h140-unsplash-200x200.jpg 200w, /images/sincerely-media-h140-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/sincerely-media-h140-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Every day a new life begins! Cherish the moment." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <span className="widget_bwp_popular_post_num">
                     {" 1 "}
                   </span>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"What To Do If There Is No Inspiration"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 16, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_views_count">
-                        <a href="#">
+                        <Link href="/">
                           {" Views: 5352 "}
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_comments_count">
-                        <a href="#">
+                        <Link href="/">
                           {" 4 Comments "}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/bench-accounting-h51-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="A minimalist workspace will help you focus on work." decoding="async" loading="lazy" srcSet="/images/bench-accounting-h51-unsplash-200x200.jpg 200w, /images/bench-accounting-h51-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/bench-accounting-h51-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="A minimalist workspace will help you focus on work." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <span className="widget_bwp_popular_post_num">
                     {" 2 "}
                   </span>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"How Minimalism Helps Me Stay Calm"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 22, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_views_count">
-                        <a href="#">
+                        <Link href="/">
                           {" Views: 4795 "}
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_comments_count">
-                        <a href="#">
+                        <Link href="/">
                           {" 3 Comments "}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/clayton-chapman-1094203-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="A man stands on a rocky mountain under a white sky." decoding="async" loading="lazy" srcSet="/images/clayton-chapman-1094203-unsplash-200x200.jpg 200w, /images/clayton-chapman-1094203-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/clayton-chapman-1094203-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="A man stands on a rocky mountain under a white sky." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <span className="widget_bwp_popular_post_num">
                     {" 3 "}
                   </span>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"The Best National Parks On Our Planet"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 16, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_views_count">
-                        <a href="#">
+                        <Link href="/">
                           {" Views: 3366 "}
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_comments_count">
-                        <a href="#">
+                        <Link href="/">
                           {" 2 Comments "}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/bench-accounting-49023-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Productive and concentrated work at the workplace." decoding="async" loading="lazy" srcSet="/images/bench-accounting-49023-unsplash-200x200.jpg 200w, /images/bench-accounting-49023-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/bench-accounting-49023-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Productive and concentrated work at the workplace." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <span className="widget_bwp_popular_post_num">
                     {" 4 "}
                   </span>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"Basic Steps To Analyze Your Problem"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 6, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_views_count">
-                        <a href="#">
+                        <Link href="/">
                           {" Views: 3156 "}
-                        </a>
+                        </Link>
                       </li>
                       <li className="widget_bwp_comments_count">
-                        <a href="#">
+                        <Link href="/">
                           {" No comments "}
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -177,132 +180,132 @@ export default function FooterWidgets() {
               <ul className="list-unstyled">
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/evie-s-v220-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Simplicity reveals the pure beauty of life." decoding="async" loading="lazy" srcSet="/images/evie-s-v220-unsplash-200x200.jpg 200w, /images/evie-s-v220-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/evie-s-v220-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Simplicity reveals the pure beauty of life." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"Simple Ways To Stay Focused"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#" rel="author">
+                        <Link href="/" rel="author">
                           <span className="vcard author">
                             <span className="fn">
                               {"Alexey Trofimov"}
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 22, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/jocelyn-morales-h86-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Simplicity and sophistication of white." decoding="async" loading="lazy" srcSet="/images/jocelyn-morales-h86-unsplash-200x200.jpg 200w, /images/jocelyn-morales-h86-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/jocelyn-morales-h86-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Simplicity and sophistication of white." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"Useful Things For Better Productivity"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#" rel="author">
+                        <Link href="/" rel="author">
                           <span className="vcard author">
                             <span className="fn">
                               {"Alexey Trofimov"}
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 12, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/ina-carolino-jOoEo2GvZvg-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="A beautiful plant in a white pot on a white table." decoding="async" loading="lazy" srcSet="/images/ina-carolino-jOoEo2GvZvg-unsplash-200x200.jpg 200w, /images/ina-carolino-jOoEo2GvZvg-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/ina-carolino-jOoEo2GvZvg-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="A beautiful plant in a white pot on a white table." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"How Has Minimalism Affected Your Life?"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#" rel="author">
+                        <Link href="/" rel="author">
                           <span className="vcard author">
                             <span className="fn">
                               {"Alexey Trofimov"}
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 12, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
                   <figure className="widget_bwp_thumbnail">
-                    <a href="#">
-                      <img width="200" height="200" src="/images/jonny-caspari-wsvCC6UyKjs-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Minimalist black lamp." decoding="async" loading="lazy" srcSet="/images/jonny-caspari-wsvCC6UyKjs-unsplash-200x200.jpg 200w, /images/jonny-caspari-wsvCC6UyKjs-unsplash-150x150.jpg 150w" sizes="auto, (max-width: 200px) 100vw, 200px" />
+                    <Link href="/">
+                      <Image width={200} height={200} src="/images/jonny-caspari-wsvCC6UyKjs-unsplash-200x200.jpg" className="attachment-orin-200-200-crop size-orin-200-200-crop wp-post-image" alt="Minimalist black lamp." loading="lazy" />
                       <div className="widget_bwp_bg_overlay"></div>
-                    </a>
+                    </Link>
                   </figure>
                   <div className="widget_bwp_content">
                     <h4 className="entry-title">
-                      <a href="#">
+                      <Link href="/">
                         {"Habits That Will Make Your Life Better"}
-                      </a>
+                      </Link>
                     </h4>
                     <ul className="widget_bwp_meta list-unstyled clearfix">
                       <li>
-                        <a href="#" rel="author">
+                        <Link href="/" rel="author">
                           <span className="vcard author">
                             <span className="fn">
                               {"Alexey Trofimov"}
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link href="/">
                           <span className="date updated">
                             {"August 12, 2021"}
                           </span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -324,14 +327,14 @@ export default function FooterWidgets() {
                     <ul></ul>
                   </div>
                   <form action="#contact-us" method="post" className="wpcf7-form init" aria-label="Contact form" noValidate data-status="init">
-                    <fieldset className="hidden-fields-container">
+                    <div style={{ display: "none" }}>
                       <input type="hidden" name="_wpcf7" value="368" />
                       <input type="hidden" name="_wpcf7_version" value="6.1.4" />
                       <input type="hidden" name="_wpcf7_locale" value="en_US" />
                       <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f368-o1" />
                       <input type="hidden" name="_wpcf7_container_post" value="0" />
                       <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                    </fieldset>
+                    </div>
                     <p>
                       <label>
                         {" Your Name"}

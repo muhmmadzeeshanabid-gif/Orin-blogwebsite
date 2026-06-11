@@ -22,7 +22,7 @@ export default function GalleryLightbox() {
 
     const initPopupMedia = () => {
       const $ = window.jQuery;
-      if (!$.fn?.magnificPopup || initialized) {
+      if (!$ || !$.fn?.magnificPopup || initialized) {
         return false;
       }
 
@@ -114,7 +114,7 @@ export default function GalleryLightbox() {
       window.clearInterval(pollId);
 
       const $ = window.jQuery;
-      if (!$.fn?.magnificPopup) {
+      if (!$ || !$.fn?.magnificPopup) {
         return;
       }
 
