@@ -1,6 +1,10 @@
-import { getReferenceSection } from "./orinReference";
-
 export default function ScrollTop() {
-  const scrollTopHtml = getReferenceSection('button: "back to top"', "sidebar (hidden right sidebar)");
-  return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: scrollTopHtml }} />;
+  return (
+    <div id="bwp-scroll-top">
+      <button type="button" className="bwp-button bwp-scroll-top-button">
+        <i className="fas fa-chevron-up"></i>
+      </button>
+    </div>
+  );
 }
+

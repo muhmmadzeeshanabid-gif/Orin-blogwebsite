@@ -1,6 +1,57 @@
-import { getReferenceSection } from "../utils/orinReference";
-
 export default function Footer() {
-  const footerHtml = getReferenceSection("footer", "end: footer");
-  return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: footerHtml }} />;
+  return (
+    <>
+      <footer className="bwp-site-footer bwp-footer-has-widgets">
+        <div className="bwp-footer-text">
+          <span className="bwp-demo-footer-mainline">
+            {"Thanks for the visit"}
+            <span className="bwp-demo-footer-heart">
+              <i className="far fa-heart"></i>
+            </span>
+            <strong>{"Orin"}</strong>
+            {" WordPress Theme © 2025"}
+          </span>
+          <span className="bwp-demo-footer-social-line">
+            {"/ Follow:"}
+            <a href="#" className="bwp-demo-footer-follow">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" className="bwp-demo-footer-follow">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#" className="bwp-demo-footer-follow">
+              <i className="fab fa-youtube"></i>
+            </a>
+          </span>
+        </div>
+
+        <div className="bwp-footer-menu">
+          <nav className="menu-demo-footer-container">
+            <ul id="menu-demo-footer" className="bwp-footer-menu-list list-unstyled">
+              <li
+                id="menu-item-347"
+                className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-347"
+              >
+                <a href="#" aria-current="page">
+                  {"Homepage"}
+                </a>
+              </li>
+              <li id="menu-item-348" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-348">
+                <a href="#">{"Archives"}</a>
+              </li>
+              <li id="menu-item-349" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-349">
+                <a href="#">{"Single Posts"}</a>
+              </li>
+              <li id="menu-item-350" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-350">
+                <a href="#about-us">{"About Us"}</a>
+              </li>
+              <li id="menu-item-351" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-351">
+                <a href="#contact-us">{"Contact Us"}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </>
+  );
 }

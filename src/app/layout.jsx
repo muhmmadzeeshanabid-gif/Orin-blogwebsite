@@ -1,6 +1,5 @@
 import Script from "next/script";
 import "./globals.css";
-import { getBodyClassName } from "../components/utils/orinReference";
 
 export const metadata = {
   title: "Orin - Minimal Blog For WordPress - Just another WordPress site",
@@ -8,7 +7,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const bodyClassName = getBodyClassName();
+  const bodyClassName = "home blog wp-embed-responsive wp-theme-orin bwp-body bwp-sidebar-hidden bwp-enable-sticky-header";
 
   return (
     <html lang="en-US" suppressHydrationWarning>
@@ -45,6 +44,41 @@ export default function RootLayout({ children }) {
             flex-wrap: wrap;
             gap: 6px;
             text-align: center !important;
+          }
+          @media (max-width: 767px) {
+            .pagination,
+            .navigation.pagination,
+            .pagination .nav-links {
+              display: flex !important;
+              justify-content: flex-start !important;
+              text-align: left !important;
+            }
+            .pagination {
+              padding-left: 30px !important;
+            }
+          }
+          #bwp-toggle-dashboard {
+            float: right;
+            width: 34px;
+            height: 70px;
+            line-height: 70px;
+            font-size: 13px;
+            color: #393940;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+          }
+          #bwp-toggle-dashboard:hover,
+          #bwp-toggle-dashboard:focus {
+            color: #6f6fff;
+          }
+          .bwp-dark-style #bwp-toggle-dashboard {
+            color: #d6d6de;
+          }
+          .bwp-dark-style #bwp-toggle-dashboard:hover,
+          .bwp-dark-style #bwp-toggle-dashboard:focus {
+            color: #8585ff;
           }
         `}</style>
       </head>

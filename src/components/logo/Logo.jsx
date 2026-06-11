@@ -1,6 +1,16 @@
-import { getReferenceSection } from "../utils/orinReference";
-
 export default function Logo() {
-  const logoHtml = getReferenceSection("logo area", "end: logo area");
-  return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: logoHtml }} />;
+  return (
+    <>
+    <div className="bwp-logo-container clearfix">
+      <div className="bwp-logo-text-container">
+        <a href="#" rel="home" className="bwp-logo-text">
+          {"ORIN"}
+        </a>
+      </div>
+      <h1 className="screen-reader-text bwp-site-name">
+        {"Orin - Minimal Blog For WordPress"}
+      </h1>
+    </div>
+    </>
+  );
 }
