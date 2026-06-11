@@ -4,7 +4,7 @@ import Logo from "../components/logo/Logo";
 import RecentPosts from "../components/recent-posts/RecentPosts";
 import HeroSlider from "../components/slider/HeroSlider";
 import ScrollTop from "../components/utils/ScrollTop";
-import ThemeStabilizer from "../components/utils/ThemeStabilizer";
+import GalleryLightbox from "../components/utils/GalleryLightbox";
 import FooterWidgets from "../components/widgets/FooterWidgets";
 
 export default function HomePage() {
@@ -24,7 +24,7 @@ export default function HomePage() {
       <Footer />
 
       <ScrollTop />
-      <ThemeStabilizer />
+      <GalleryLightbox />
     </>
   );
 }

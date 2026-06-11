@@ -1,4 +1,10 @@
+"use client";
+
+import useHeaderUi from "./useHeaderUi";
+
 export default function Header() {
+  useHeaderUi();
+
   return (
     <>
     <header id="bwp-header">
@@ -6,14 +12,14 @@ export default function Header() {
         <div className="bwp-header-container clearfix">
           <div className="bwp-header-menu">
             <nav className="menu-demo-header-container">
-              <ul id="menu-demo-header" className="sf-menu">
+              <ul id="menu-demo-header" className="sf-menu sf-arrows">
                 <li id="menu-item-243" className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-243">
                   <a href="#" aria-current="page">
                     {"Homepage"}
                   </a>
                 </li>
                 <li id="menu-item-244" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-244">
-                  <a href="#">
+                  <a href="#" className="sf-with-ul">
                     {"Categories"}
                   </a>
                   <ul className="sub-menu">
@@ -45,7 +51,7 @@ export default function Header() {
                   </ul>
                 </li>
                 <li id="menu-item-251" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-251">
-                  <a href="#">
+                  <a href="#" className="sf-with-ul">
                     {"Single Posts"}
                   </a>
                   <ul className="sub-menu">
@@ -178,7 +184,7 @@ export default function Header() {
                 <i className="fas fa-search"></i>
               </button>
               <div id="bwp-dropdown-search" className="bwp-hidden">
-                <form id="searchform" role="search" method="get" href="#">
+                <form id="searchform" role="search" method="get" action="#">
                   <div className="input-group">
                     <input type="text" name="s" id="s" className="bwp-search-field form-control" autoComplete="off" placeholder="Enter your search query..." />
                     <span className="input-group-btn">

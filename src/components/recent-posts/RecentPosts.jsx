@@ -1,20 +1,21 @@
+﻿"use client";
+
+import useRecentPostsUi from "./useRecentPostsUi";
+
 export default function RecentPosts() {
+  useRecentPostsUi();
+
   return (
-    <>
     <section className="bwp-recent-posts-section bwp-site-section bwp-section-has-header">
       <div className="bwp-separator bwp-gradient">
         <span className="bwp-rhomb"></span>
       </div>
       <header className="bwp-section-header">
         <h2 className="bwp-section-title">
-          {" Recent Articles "}
-          <span className="bwp-page-number">
-            {" Page №1 "}
-          </span>
+          Recent Articles
+          <span className="bwp-page-number">Page №1</span>
         </h2>
-        <p>
-          {" All My Posts With Interesting Stories "}
-        </p>
+        <p>All My Posts With Interesting Stories</p>
         <div className="bwp-section-header-separator"></div>
       </header>
       <div className="bwp-posts" role="main">
@@ -96,7 +97,11 @@ export default function RecentPosts() {
                 <div className="bwp-post-media-slider bwp-popup-gallery">
                   <div id="bwp-post-slider-74" className="bwp-post-slider">
                     <figure className="bwp-post-slider-item">
-                      <a href="/images/jan-pictures-cIDdZYoSeJ4-unsplash.jpg" className="bwp-popup-gallery-item" title="Woman in white sleeveless top with white flower. * Caption example.">
+                      <a
+                        href="/images/jan-pictures-cIDdZYoSeJ4-unsplash.jpg"
+                        className="bwp-popup-gallery-item"
+                        title="Woman in white sleeveless top with white flower. * Caption example."
+                      >
                         <img src="/images/jan-pictures-cIDdZYoSeJ4-unsplash.jpg" alt="Woman in white sleeveless top with white flower." loading="eager" />
                         <div className="bwp-post-media-overlay"></div>
                         <span className="bwp-post-hover-icon bwp-expand-image">
@@ -105,7 +110,11 @@ export default function RecentPosts() {
                       </a>
                     </figure>
                     <figure className="bwp-post-slider-item">
-                      <a href="/images/aiony-haust-760593-unsplash.jpg" className="bwp-popup-gallery-item" title="Happy woman is sitting on the stairs, raising her right hand. * Caption example.">
+                      <a
+                        href="/images/aiony-haust-760593-unsplash.jpg"
+                        className="bwp-popup-gallery-item"
+                        title="Happy woman is sitting on the stairs, raising her right hand. * Caption example."
+                      >
                         <img src="/images/aiony-haust-760593-unsplash.jpg" alt="Happy woman is sitting on the stairs, raising her right hand." loading="eager" />
                         <div className="bwp-post-media-overlay"></div>
                         <span className="bwp-post-hover-icon bwp-expand-image">
@@ -114,7 +123,11 @@ export default function RecentPosts() {
                       </a>
                     </figure>
                     <figure className="bwp-post-slider-item">
-                      <a href="/images/florencia-potter-QCRdeq27OEU-unsplash.jpg" className="bwp-popup-gallery-item" title="Woman looking down. * Caption example.">
+                      <a
+                        href="/images/florencia-potter-QCRdeq27OEU-unsplash.jpg"
+                        className="bwp-popup-gallery-item"
+                        title="Woman looking down. * Caption example."
+                      >
                         <img src="/images/florencia-potter-QCRdeq27OEU-unsplash.jpg" alt="Woman looking down." loading="eager" />
                         <div className="bwp-post-media-overlay"></div>
                         <span className="bwp-post-hover-icon bwp-expand-image">
@@ -605,6 +618,6 @@ export default function RecentPosts() {
         </div>
       </nav>
     </section>
-    </>
   );
 }
+

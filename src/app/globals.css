@@ -13023,6 +13023,7 @@ body.bwp-dark-style .wp-playlist {
 	}
 	#bwp-dropdown-search #searchform .bwp-search-field {
 		padding-left: 15px;
+		font-size: 12px;
 	}
 	#bwp-dropdown-search #searchform .bwp-search-submit {
 		width: 43px;
@@ -13654,4 +13655,63 @@ body.bwp-enable-sticky-header {
 }
 .bwp-site-footer .bwp-footer-top-separator {
 	margin-bottom: 50px;
+}
+
+/* React lightbox */
+.bwp-lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	background: rgba(10,10,13,0.92);
+}
+.bwp-lightbox-figure {
+	margin: 0;
+	max-width: min(1100px, 100%);
+	max-height: 100%;
+	text-align: center;
+}
+.bwp-lightbox-image {
+	display: block;
+	max-width: 100%;
+	max-height: calc(100vh - 120px);
+	border-radius: 2px;
+	box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+.bwp-lightbox-caption {
+	margin-top: 12px;
+	font-size: 13px;
+	line-height: 1.7;
+	color: #f1f1f4;
+}
+.bwp-lightbox-close,
+.bwp-lightbox-nav {
+	position: absolute;
+	border: none;
+	outline: none;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 22px;
+	color: #393940;
+	background: #ffffff;
+	box-shadow: 0 6px 18px -6px rgba(32,32,37,0.25);
+}
+.bwp-lightbox-close:hover,
+.bwp-lightbox-nav:hover {
+	color: #ffffff;
+	background: #6f6fff;
+}
+.bwp-lightbox-close {
+	top: 20px;
+	right: 20px;
+}
+.bwp-lightbox-prev {
+	left: 20px;
+}
+.bwp-lightbox-next {
+	right: 20px;
 }

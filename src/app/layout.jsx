@@ -31,12 +31,6 @@ export default function RootLayout({ children }) {
           .bwp-font-types,
           #bwp-show-font-types,
           #bwp-dropdown-font-types { display: none !important; }
-          .mfp-title,
-          .mfp-counter { text-shadow: none !important; }
-          .mfp-bottom-bar {
-            background: rgba(10, 10, 13, 0.92);
-            padding: 8px 14px;
-          }
           .pagination .nav-links {
             display: flex;
             justify-content: center !important;
@@ -84,6 +78,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={bodyClassName} suppressHydrationWarning>
         {children}
+        <Script src="/vendor/orin/js/jquery.min.js" strategy="beforeInteractive" />
+        <Script src="/vendor/orin/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
         <Script id="orin-restore-style-cookie" strategy="beforeInteractive">{`
           (function () {
             var match = document.cookie.match(/(?:^|; )orin_site_style=([^;]*)/);
@@ -95,39 +91,6 @@ export default function RootLayout({ children }) {
             }
           })();
         `}</Script>
-        <Script src="/vendor/orin/js/jquery.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/jquery-migrate.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/bootstrap.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/superfish.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/imagesloaded.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/masonry.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/jquery.masonry.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/tiny-slider.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
-        <Script src="/vendor/orin/js/ie10-viewport-bug-workaround.js" strategy="afterInteractive" />
-        <Script id="orin-theme-data" strategy="afterInteractive">{`
-          window.orinData = {
-            isSingular: "false",
-            fontSwitch: "off",
-            colorSwitch: "on",
-            dropdownSearch: "on",
-            hiddenSidebar: "on",
-            logoType: "text",
-            homepageSliderRewind: "off",
-            homepageSliderTransition: "slide_vertical",
-            homepageSliderAnimationSpeed: "550",
-            homepageSliderControls: "on",
-            homepageSliderNav: "on",
-            gallerySliderRewind: "off",
-            gallerySliderTransition: "slide_vertical",
-            gallerySliderAnimationSpeed: "550",
-            postsHorizontalOrder: "off",
-            fontSwitchCookies: "off",
-            colorSwitchCookies: "on",
-            backToTop: "on"
-          };
-        `}</Script>
-        <Script src="/vendor/orin/js/orin-theme.js" strategy="afterInteractive" />
       </body>
     </html>
   );
